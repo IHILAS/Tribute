@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page</title>
+    <style>
+     body{
+        margin: 0%;
+        background-color: rgb(0, 0, 0);
+     }
+     
+     .nav{
+        display: flex;
+       justify-content: center;
+        align-items: center;
+        background-color: black;
+        padding: 10px 30px;
+        height: 90px;
+     }
+     .nav a{
+        height: 50px;
+        width: 120px;
+     }
+     a{
+        text-decoration: none;
+        font-size: 20px;
+        text-align: center;
+        margin-left: 20px;
+        background-color: rgb(255, 255, 255);
+        font-weight:bolder;
+    
+          display: flex;
+            align-items: center;
+        justify-content: center;
+             }
+     h1{
+        background: rgb(0,255,3);
+background: linear-gradient(0deg, rgba(0,255,3,1) 38%, rgba(255,252,250,1) 39%, rgba(245,255,248,1) 43%, rgba(255,255,255,1) 54%, rgba(235,255,241,1) 56%, rgba(255,149,0,1) 56%);
+        margin-left: 360px;
+        align-items: center;
+        font-size: 40px;
+        font-family: fantasy;
+        background-clip: text;
+        color: transparent;
+        width: 100%;
+     }
+     .link{
+       
+        display: flex;
+            align-items: center;
+            margin-left: 10%;
+            font-weight: bolder;
+            padding: 10px;
+            
+     }
+     button,a{
+        margin-left: 20px;
+        
+            width: 90px;
+            font-weight: bolder;
+            font-weight: 550;
+    letter-spacing: 1px;
+   
+    background-color: rgb(2, 15, 46) ;
+    color: rgb(255, 255, 255);
+    border: none;
+    box-shadow: 3px 3px 6px red;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 3px;
+     }
+    button{
+height: 50px;
+font-weight: bold;
+
+}
+a{
+    height: 14px;
+    
+}
+     
+     a:hover,button:hover{
+        transform: scale(0.9);
+    background-color: orange;
+     }
+     a:active,button:active{
+       
+        box-shadow: 3px 3px 6px rgb(0, 255, 0);
+      
+     }
+     .img{
+        background-image: url("Picsart_24-05-31_22-37-17-488.jpg");
+        height:600px;
+        width: 1231px;
+        background-size: cover;
+
+     }
+     header{
+        font-size: 50px;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     }
+     .heading{
+        color: white;
+        font-size: 25px;
+        
+     }
+     .quote{
+        color: white;
+        font-style: italic;
+        font-size: 15px;
+        font-family:Arial, Helvetica, sans-serif ;
+     }
+     .img {
+        display: inline-block;
+        line-height: 1;
+    }
+    .img {
+      padding: 9rem;
+      
+    }
+        
+    .navv{
+        display:inline;
+        background-color: black;
+        width: 1000px;
+    }
+    .navv a{
+       display: inline-block;
+             background-color:rgb(24, 24, 24);
+             box-shadow: none;
+             width: 110px;
+            }
+            
+            header,.heading,.quote{
+               margin: 0;
+               padding: 5px;;
+            }
+           
+        .navv {
+            display: flex;
+            justify-content: center;
+            background-color: black;
+            width: 1020px;
+           
+        }
+        
+        .navv a {
+            display: inline-block;
+            background-color: rgb(0, 0, 0);
+            box-shadow: none;
+            width: 110px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+          
+            
+        }
+        
+        .navv a:hover {
+            background-color: rgb(255, 255, 255);
+            color: black;
+            transition: none;
+        }
+        .navv a:active{
+            
+           box-shadow: 3px 3px 3px greenyellow;     
+        }
+        
+        .bio,.early,.car,.achi,.ward,.photo{
+            margin-top: 60px;
+            font-size: 35px;
+            font-weight: bold;
+            font-family: monospace;
+            color: black;
+           
+  }
+  .lay #biography,#earlylife,#career,#achievements,#awards,.photo{
+    margin-left: 100px;
+  }
+        .lay{
+          margin-left: 250px;
+          
+          height: 100%;
+          width: 1020px;
+          background-color: antiquewhite;
+          box-shadow: 0 5px 20px 5px rgb(77, 156, 182);
+        }
+        h2{
+            color: black;
+        }
+        li{
+            color: rgb(33, 8, 56);
+        }
+        p{
+            text-align: justify;
+            padding-right: 100px;
+            font-size: 20px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: rgb(33, 8, 56);
+        }
+        ol,ul{
+            font-size: 20px;
+            padding-right: 100px;
+            text-align: justify;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            
+        }
+
+        .sh{
+            width: 1135.5px;
+            height: 700px;
+            display: block;
+            align-items: center;
+            justify-content: space-between;
+           
+        }
+.coverz{
+ position: relative;
+ width: 90%;
+ height: 50%;
+}
+.coverz::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    z-index: 99;
+    height: 610px;
+    width: 200px;
+    background-image: linear-gradient(90deg,black,transparent);
+}
+.coverz::after{
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    z-index: 99;
+    height: 610px;
+    width: 200px;
+    background-image: linear-gradient(-90deg,black,transparent);
+}
+.images{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    overflow: auto;
+    position: relative;
+    scroll-behavior: smooth;
+}
+.child{
+    min-width: 800px;
+    height: 450px;
+    cursor: pointer;
+    border: 5px solid aqua;
+    width: 900px;
+    height: 600px;
+    background-size: cover;
+}
+.images::-webkit-scrollbar{
+    -webkit-appearance: none;
+}
+.photo{
+    margin-bottom: 60px;
+}
+.coverz{
+    margin-right: 200px;
+}
+.nav a,button{
+ font-size: 20px;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.dropbtn{
+    box-shadow: none;
+}
+.navv {
+            overflow: hidden;
+             background-color: black;
+            
+        }
+
+        .navv a,.dropdown {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 0;
+            text-decoration: none;
+            background-color: rgb(0, 0, 0);
+            height: 80px;
+            width: 200px;
+            font-size: 20px;
+            justify-content: center;
+            align-items: center;
+            width: 201px;
+            border-radius: 0%;
+            margin: 0 0 0 0;
+            display: flex;
+            font-family:cursive;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 20px;
+            border: none;
+            outline: none;
+            color: white;
+            height: 50px;
+            width: 200px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+            background-color: rgb(0, 0, 0);
+            margin-right: 7px;
+            border-radius: 0%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .navv a:hover, .dropdown:hover .dropbtn {
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            transition: none;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #000000;
+            min-width: 160px;
+                                     
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: rgb(255, 255, 255);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+        }
+
+        .dropdown-content a:hover {
+           background-color: white;
+            color: black;
+
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+.navv a{
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+.dropbtn{
+    background-color:black;
+    color: white;
+
+}
+.dropdown-content{
+    margin-top: 150px;
+    
+       
+}
+.dropdown-content a{
+    font-size: 15px;
+    height: 50px;
+    width: 150px;
+}
+#photos {
+        
+        
+        text-align: center;
+    }
+    
+    .coverz {
+        position: relative;
+        
+        align-items: center;
+    }
+    
+    .images {
+        
+        overflow-x: auto;
+        scroll-behavior: smooth;
+    }
+    
+    .images::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .child {
+        flex: 0 0 auto;
+        
+      
+    }
+    
+    .scroll-button {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+    
+        cursor: pointer;
+        position: absolute;
+        
+        transform: translateY(-50%);
+        z-index: 1;
+    }
+    
+   .lay #scroll-left {
+        box-shadow: none;
+        right: 1020px;
+        margin-top: 0;
+        margin-left:100px;
+        color: aqua;
+        background-color: tomato;
+        transform: none;
+        transition: none;
+        height: 610px;
+        width: 28px;
+        box-shadow: none;
+     
+    }
+    
+    .lay #scroll-right {
+        margin-left: 510px;
+        top: 0px;
+        color: aqua;
+        background-color: tomato;
+        transform: none;
+        transition: none;
+        height: 610px;
+        width: 28px;
+        box-shadow: none;
+        
+    }
+    #scroll-right:hover,#scroll-left:hover{
+     background-color:aqua;
+     color: tomato;
+     transform: none;
+     transition: none;
+    }
+    #scroll-right:active,#scroll-left:active{
+        background-color: greenyellow;
+        box-shadow: 3px 3px 3px green;
+    }
+    .photo{
+        text-align: left;
+    }
+    </style>
+</head>
+<body>
+    <div class="nav"><h1>Tribute page</h1>
+        <div class="link"><a href="#">HOME</a>
+        <a href="#">ABOUT</a>
+        <a href="#">TRIBUTE</a>
+        <a href="#">GALLERY</a>
+        <button>LOGIN</button></div></div>
+    
+    </div>
+    <div class="img"><label><header>ROHIT SHARMA</header>
+    <p class="heading">Indian Cricketer</p>
+    <div><p class="quote">"Believe in yourself and your abilities, and the world will believe in you."
+A powerhouse of talent</p></div></label></div></div>
+    <div class="lay"> <div class="navv">
+        <a href="#biography">Biography</a>
+        <a href="#earlylife">Early Life</a>
+        <div class="dropdown">
+            <button class="dropbtn">Career 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#ipl">IPL</a>
+                <a href="#international">International</a>
+            </div>
+        </div>
+        <a href="#achievements">Achievements</a>
+        <a href="#awards">Awards</a>
+        <a href="#photos">Photos</a>
+    
+    </div>
+    
+    <div id="biography"><div class="bio">Biography</div>
+    <p>Rohit Gurunath Sharma(born April 30, 1987, Bansod, India) is an Indian international cricketer and the current captain of the Indian cricket team in all three international formats—Test cricket, One-Day International (ODI), and Twenty20 International (T20I). Sharma also captained the Mumbai Indians, a franchise team in the Indian Premier League (IPL), for 10 years and led them to five titles. Sharma is known for his batting prowess and is nicknamed “Hitman” by his fans. He is also an occasional off-spinner.</p>
+
+       <p>Sharma is the only player to have scored three double hundreds in ODI cricket; no other player has scored even two. He also holds the record for most international sixes across all formats, most sixes in World Cups, and the highest individual score in an ODI. He was a member of the Indian sides that won the 2007 T20I World Cup and the 2013 ICC (International Cricket Council) Champions Trophy.</p>
+    </div>
+    <div id="earlylife"><div class="early">Early Life</div>
+    <p>Sharma was born on April 30, 1987, in Bansod, Nagpur, in the state of Maharashtra, India. He first joined a cricket camp in 1999, when coach Dinesh Lad, a friend of his uncle's, noticed his talent. Lad used to scout for talent in those days and was very impressed with the way Sharma bowled. Knowing that Sharma,s uncle would not be able to afford the fees for the school where Lad was coach, Lad convinced the school's director to accept Sharma as a student and waive his entire fee so that he would have access to good training facilities. Sharma started off as a spinner before focusing on batting.</p>
+    <p>Sharma made his senior-level debut in a List A game in 2006, scoring an unbeaten 31 for West Zone against Central Zone in the Deodhar Trophy. His run of scores in the tournament got him picked for the India A squad, and he made his first-class debut for India Athat team against New Zealand at Darwin later in 2006, scoring 57 and 22, respectively. India achieved a 3-wicket win over New Zealand. He subsequently made his Ranji Trophy debut for Mumbai, one of the leading (and hard to break into) teams in the Indian domestic circuit, in the 2006-07 season and impressed with a double hundred while playing against Gujarat, as well as a half-century in a winning cause in the final that year. Sharma has gone on to represent Mumbai throughout his first-class career.</p>
+    </div>
+    
+    <div id="career"><div class="car">Career</div>
+<h2 id="ipl">IPL Career</h2>
+<p>Captain Marvellous. Rohit Sharma has etched his name as the most successful captain in the IPL with five trophies, the most by anyone in the tournament. He has cracked the code and made MI the most consistent team. A prolific run-getter, the Hitman is one of the most naturally gifted batsmen in the world and has been enjoying a tremendous run with the bat. When it comes to the shorter format, there are few who can match his striking abilities. Rohit proved why he is regarded as a special talent when he became the first batsman to strike two double centuries in the ODIs and he now has three. He was one of the most consistent Deccan Chargers batsmen in the first three seasons of the IPL and was instrumental in his former franchise winning the crown in 2009 However, since 2011, Rohit has been an integral part of the Mumbai Indians guiding their batting line-up.</p>
+<p>He took over the team's captaincy a couple of games into the 2013 season and led MI to their maiden IPL title. In the same year, MI also completed a grand double when they clinched the Champions League T20 title. His captaincy was put to test in the 2015 season after the team won just one of their first six games and were struggling to stay afloat. Mumbai Indians then staged a remarkable turnaround and lifted the Trophy for the second time with a convincing win in the final. Rohit, who made a half-century, was named the Player of the Match. The legacy of Hitman expanded further on, after powering Mumbai Indians to title victories in the 2017 and 2019 seasons, both being last ball thrillers. Rohit led the Mumbai Indians to a successful campaign in the 2020 season, which was their second consecutive title</p>
+
+<h2 id="international">International Career</h2>
+<p>Sharma's international career kicked off with an ODI match against Ireland at Belfast in June 2007, when he took one catch but did not get a chance to bat or bowl. His T20I debut was later the same year, in the group game against England in the first T20I World Cup. Again, he didn,t get a chance to bat or bowl but took one catch, in a match remembered for Yuvraj Singh's six sixes in an over. Sharma was Player of the Match in the quarterfinals against South Africa. He was also part of the team that won the T20I World Cup final, scoring a quick 30, the second highest score for India.
+
+    Sharma scored his first ODI half-century in November 2007 and had a run of good scores in the 2007-08 ODI series in Australia, which India won. He scored two ODI hundreds in 2010 but subsequently had a loss of form and fitness, which led to him being dropped from the eventually victorious 2011 ODI World Cup team. His loss of form continued for a couple of years, and he continued to be in and out of the team.</p>
+<p>It was in 2013 that the captain, Mahendra Singh Dhoni, promoted Sharma as opener, a position at which he has been a success. His partnership with Shikhar Dhawan at the top of the order has yielded great results for India. He scored his first ODI double hundred against Australia the same year and followed it up with a second double hundred against Sri Lanka in 2014. The latter score of 264 remains an ODI record for highest individual score. Sharma made his Test debut in 2013, scoring 177 against West Indies in Kolkata, in Sachin Tendulkar,s farewell series. He was, however, unable to hold his position in the Test team for a few years after a run of poor scores in overseas Test matches.
+
+    In 2015 Sharma scored a T20I hundred against South Africa at Dharamshala, India, becoming the second Indian to score a hundred in all three international formats. In 2017 he scored a T20I hundred against Sri Lanka at Indore in only 35 balls, equaling David Miller,s record for the fastest T20I hundred. He was also part of the ODI World Cup team that year for the first time and scored one century as India made it to the semifinals.</p>
+<p>In 2017, when Virat Kohli, captain on the Indian ODI team at that time, was rested, Sharma was appointed captain of the ODI team in a series against Sri Lanka. He led India to victory and scored his third ODI double hundred.
+
+    The 2019 ODI World Cup, where India made it to the semifinals, saw Sharma in a rich vein of form. He scored five centuries, the most in a single World Cup edition, and led the run charts. He was also vice captain during the tournament. The year also saw Sharma play the opening batsman role in Tests for the first time; he scored two hundreds in a match against South Africa.
+    
+    Sharma was appointed vice captain of the Test team during the 2020 series in Australia and scored critical runs in a series India won. He continued to score heavily in the 2021 twin series against England. In February 2022 he was appointed captain of the Indian team in all three formats.
+    
+    </p>
+    <p>In the 2023 ODI World Cup, Sharma led the Indian team to a clean sweep in the league phase and, in the process, set a record for the most hundreds and the most sixes in ODI World Cup history. </p>
+</div>
+   <div id="achievements"><div class="achi">Achievements</div>
+   <ol>
+    <li>Sharma clinched the world record for the highest ever individual score in a one-day international match, with a remarkable 264 against Sri Lanka at Eden Gardens, Kolkata, on 13 November 2014.</li>
+    <li>He is the only player to have scored three double-centuries in this form of international cricket</li>
+    <li>In January 2020, Sharma was named as the ODI Player of the Year by the International Cricket Council </li>
+    <li>During the 2019 World Cup, Sharma became the only batsman to scored five centuries in a single edition of the Cricket World Cup.</li>
+    <li>On 5 October 2019, during a Test match against South Africa, Sharma became the first batsman to score two centuries in a match on his first appearance as an opening batsman</li>
+    <li>On 11 October 2023, Sharma achieved a historic feat during the 2023 Cricket World Cup match against Afghanistan team, when he surpassed the record previously held by Chris Gayle for the most international sixes (553).His powerful and elegant batting style, coupled with his consistency, allowed him to reach this milestone with 556 sixes, overtaking Gayle's record</li>
+    <li>On 14 October 2023, Sharma achieved a milestone in the world of cricket by becoming the first Indian to complete 300 sixes in the 50-overs format</li>
+    <li>In November 2020, Rohit Sharma became the fastest player to reach 6,000 runs as an opening batsman in ODIs. He achieved this milestone in just 137 innings, surpassing the previous record held by legendary Indian cricketer Sachin Tendulkar.    </li>
+    <li>He became the first Indian batter to smash 50 One Day International (ODI) sixes in a single calendar year.</li>
+    <li>Five-time IPL Champion as Captain: Rohit Sharma has led the Mumbai Indians (MI) to five IPL titles (2013, 2015, 2017, 2019, and 2020), making him the most successful captain in the history of the tournament.</li>
+    <li>Most Wins as Captain: Under Rohit Sharma's leadership, MI has recorded the highest number of wins, establishing a record of consistent performance.</li>
+    <li>Over 5,000 Runs in IPL: Rohit Sharma is one of the few players who have scored over 5,000 runs in the IPL, showcasing his batting prowess and consistency.</li>
+    <li> Rohit Sharma holds the record for hitting the most sixes by an Indian player in the IPL</li>
+    <li> Rohit Sharma is one of the few players to have taken a hat-trick and century in the IPL</li>
+   </ol>
+   </div>
+    <div id="awards"><div class="ward">Awards</div>
+    <ul>
+        <li>2015 - Arjuna Award</li>
+        <li>2020 - Major Dhyan Chand Khel Ratna</li>
+        <li> ICC Men's ODI Cricketer of the Year in 2019</li>
+        <li> ICC Men's ODI Team of the Year in 2014 and in each year from 2016 to 2019</li>
+        <li>ICC Men's Test Team of the Year in 2021</li>
+        <li>2015 Winner GQ India Man Of The Year Sportsman of the Year</li>
+       </ul>
+</div>
+<div id="photos" class="sh"><div class="photo">Photos</div><div class="coverz">
+    <button id="scroll-left" class="scroll-button">◀</button>    
+<div class="images">
+<img class="child" src="6bvgn3go_rohit-sharma-bcciipl_625x300_23_April_22.webp" alt="#">
+<img class="child" src="gettyimages-1802478089-612x612.jpg" alt="#">
+<img class="child" src="ipl-2024-rohit-sharma-001.jpg" alt="#">
+<img class="child" src="mumbai-indias-captain-rohit-sharma-during-the-icc-mens-cricket-world-cup-2023-.jpg" alt="#">
+<img class="child" src="PTI01-17-2024-000548A-0_1705507557241_1705507568965.avif" alt="#">
+<img class="child" src="PTI05-06-2023-000170B-0_1683631765190_1683631871304.avif" alt="#">
+<img class="child" src="qwe.png" alt="#">
+<img class="child" src="rohit-sharma-274023626-16x9_0.avif" alt="#">
+<img class="child" src="rohitsharma-m.webp" alt="#">
+<img class="child" src="sdsg7evg_rohit-sharma-virat-kohli-afp_625x300_29_October_22.webp" alt="#">
+<img class="child" src="TNIE_import_2018_3_5_original_Rohit_Sharma_PTI.avif" alt="#">
+<img class="child" src="wp11544183-rohit-sharma-laptop-wallpapers.jpg" alt="#">
+<img class="child" src="XdEC8ReTHF.webp" alt="#"></div>
+<button id="scroll-right" class="scroll-button">▶</button>
+</div>
+</div>
+</div>
+<script>
+    
+    document.getElementById('scroll-left').addEventListener('click', function() {
+    document.querySelector('.images').scrollBy({
+        left: -300,
+        behavior: 'smooth'
+    });
+});
+
+document.getElementById('scroll-right').addEventListener('click', function() {
+    document.querySelector('.images').scrollBy({
+        left: 300,
+        behavior: 'smooth'
+    });
+});
+
+
+</script>
+</body>
+</html>
